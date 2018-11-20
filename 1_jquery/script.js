@@ -6,7 +6,7 @@ $(function(){
     [{
         name :"card-a",
         group :"a",
-        componentPath : "./card.html"
+        componentPath : "./card-a.html"
     },{
         name :"card-b",
         group :"a",
@@ -14,7 +14,7 @@ $(function(){
     }];
 
     // add-btn click
-    $('#add-btn-nav ul li button').on('click',function(){
+    $('#add-btn button').on('click',function(){
         $this = $(this);
         let matched = map.filter(function(itm,ix){
             if ($this.attr('data-name') == itm.name) return true;
